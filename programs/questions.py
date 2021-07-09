@@ -36,11 +36,11 @@
 
 def one(input1, input2):
     if len(input1) > len(input2):
-        return print(input1)
+        return input1
     elif len(input1) == len(input2):
-        return print(f"{input1} {input2}")
+        return input1 + " " + input2
     else:
-        return print(input2)
+        return input2
 
 
     # <QUESTION 2>
@@ -133,7 +133,7 @@ def three(arg1):
 def four(arg1):
     newstr = arg1.split(" ")
     print(newstr)
-    
+    #for nums in newstr:
     pass
 
 
