@@ -204,12 +204,12 @@ def six(input):
     # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    input.lower()
-    a = int(input.count("a"))
-    e = int(input.count("e"))
-    i = int(input.count("i"))
-    o = int(input.count("o"))
-    u = int(input.count("u"))
+    ninput = input.lower()
+    a = int(ninput.count("a"))
+    e = int(ninput.count("e"))
+    i = int(ninput.count("i"))
+    o = int(ninput.count("o"))
+    u = int(ninput.count("u"))
     return a + e + i + o + u
     pass
 
@@ -261,7 +261,11 @@ def eight(input):
 
 def nine(inputString, char):
     lol = inputString.replace(" ", "")
-    
+    if char in inputString:
+        return lol.index(char) + 1
+    else:
+        return -1
+        
     pass
 
 
@@ -284,4 +288,5 @@ def nine(inputString, char):
     # How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
 
 def ten(string, int, char):
+    
     pass
