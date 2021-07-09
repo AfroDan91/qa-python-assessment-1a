@@ -102,7 +102,7 @@ def three(arg1):
     elif arg1 % 3 != 0 and arg1 % 5 == 0:
         return "buzz"
     elif arg1 % 3 == 0 and arg1 % 5 == 0:
-        return "fizbuzz"
+        return "fizzbuzz"
     else:
         return "null"
     pass
@@ -131,6 +131,7 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
+
     pass
 
 
@@ -181,6 +182,10 @@ def five(input):
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 def six(input):
+    if input.find("cei"):
+        return True
+    else:
+        return False
     pass
 
 
@@ -199,6 +204,13 @@ def six(input):
     # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
+    input.lower()
+    a = int(input.count("a"))
+    e = int(input.count("e"))
+    i = int(input.count("i"))
+    o = int(input.count("o"))
+    u = int(input.count("u"))
+    return a + e + i + o + u
     pass
 
 
@@ -218,6 +230,14 @@ def seven(input):
     # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
+    list1 = []
+    for number in range(input - 1, input + 1):
+        answer = number * input
+        list1.append(answer)
+    
+    print(sum(list1))
+    return sum(list1)
+
     pass
 
 
@@ -240,7 +260,10 @@ def eight(input):
     # Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
+    lol = inputString.replace(" ", "")
+    
     pass
+
 
 
     # <QUESTION 10>
