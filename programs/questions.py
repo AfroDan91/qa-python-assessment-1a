@@ -66,14 +66,14 @@ def one(input1, input2):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
-    input.lower()
+    finput = input.lower()
     word = "bert"
-    if input.count(word) <= 1:
+    if finput.count(word) <= 1:
         return " "
-    elif input.count(word) == 2:
-        start = input.find(word,)
-        end = input.find(word, input.index(word, 1))
-        return input.pop(start,end)
+    elif finput.count(word) == 2:
+        lside = finput.lstrip(word)
+        strip = lside.rstrip(word)
+        return strip
     pass
 
 
