@@ -288,5 +288,14 @@ def nine(inputString, char):
     # How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
 
 def ten(string, int, char):
+    z = string.lower()
+    x = z.replace(" ", "")
+    print(z.index(char))
+    if int > len(x):
+        return False
+    elif z.index(char, int +1 ) == int:
+        return True
+    else:
+        return False
     
     pass
