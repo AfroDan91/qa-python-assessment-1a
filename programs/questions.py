@@ -131,7 +131,9 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-
+    newstr = arg1.split(" ")
+    print(newstr)
+    
     pass
 
 
@@ -290,10 +292,9 @@ def nine(inputString, char):
 def ten(string, int, char):
     z = string.lower()
     x = z.replace(" ", "")
-    print(z.index(char))
     if int > len(x):
         return False
-    elif z.index(char, int +1 ) == int:
+    elif x.index(char, 0) == int:
         return True
     else:
         return False
